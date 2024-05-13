@@ -14,11 +14,16 @@ interface IProps extends IFlipSetting, IEventProps {
     className: string;
     style: React.CSSProperties;
     children: React.ReactNode;
+    extraKey?: any;
     renderOnlyPageLengthChange?: boolean;
 }
 
+interface HTMLFlipBookRef {
+    pageFlip: () => PageFlip;
+}
+
 const HTMLFlipBookForward = React.forwardRef(
-    (props: IProps, ref: React.MutableRefObject<PageFlip>) => {
+    (props: IProps, ref: React.MutableRefObject<HTMLFlipBookRef>) => {
         const htmlElementRef = useRef<HTMLDivElement>(null);
         const childRef = useRef<HTMLElement[]>([]);
         const pageFlip = useRef<PageFlip>();
@@ -116,6 +121,14 @@ const HTMLFlipBookForward = React.forwardRef(
             }
             // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [pages]);
+
+        useEffect(() => {
+            pageFlip.current?.updateMinWidth(props.minWidth);
+        }, [props.minWidth]);
+
+        useEffect(() => {
+            pageFlip.current?.update();
+        }, [props.extraKey]);
 
         return (
             <div ref={htmlElementRef} className={props.className} style={props.style}>

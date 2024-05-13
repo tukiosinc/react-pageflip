@@ -1,6 +1,6 @@
 {
     "name": "react-pageflip",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "author": "oleg.litovski9@gmail.com",
     "license": "MIT",
     "description": "Simple React.js wrapper for StPageFlip library, for creating realistic and beautiful page turning effect",
@@ -46,7 +46,7 @@
         "typescript-plugin-css-modules": "^2.7.0"
     },
     "dependencies": {
-        "page-flip": "latest"
+        "page-flip": "github:tukiosinc/StPageFlip#6c10136277a1f7b7779ae2f8e1e41041492e8141"
     },
     "keywords": [
         "react",
