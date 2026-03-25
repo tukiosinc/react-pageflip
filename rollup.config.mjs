@@ -1,6 +1,6 @@
 import autoprefixer from 'autoprefixer';
 import postcss from 'rollup-plugin-postcss';
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 
 export default {
     external: ['react', 'react-dom', 'page-flip'],
@@ -21,7 +21,7 @@ export default {
         },
     ],
     plugins: [
-        typescript({ useTsconfigDeclarationDir: true }),
+        typescript({ tsconfig: 'tsconfig.json', declaration: true, declarationDir: 'build' }),
         postcss({
             plugins: [autoprefixer()],
             minimize: true,

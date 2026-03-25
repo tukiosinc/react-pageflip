@@ -17,37 +17,20 @@
     "scripts": {
         "build": "rollup -c",
         "build:dev": "rollup -c --watch",
-        "eslint": "eslint . --ext .ts,.tsx",
         "prepare": "npm run build"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^15.1.0",
-        "@rollup/plugin-node-resolve": "^9.0.0",
-        "@types/classnames": "^2.2.10",
-        "@typescript-eslint/eslint-plugin": "^4.2.0",
-        "@typescript-eslint/parser": "^4.2.0",
-        "autoprefixer": "^9.8.6",
-        "eslint": "^7.9.0",
-        "eslint-config-airbnb": "^18.2.0",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-plugin-jest": "^24.0.2",
-        "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-react": "^7.21.0",
-        "eslint-plugin-react-hooks": "^4.1.2",
-        "eslint-plugin-typescript": "^0.14.0",
-        "prettier": "^2.1.2",
+        "@rollup/plugin-typescript": "^12.0.0",
+        "autoprefixer": "^10.0.0",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
-        "rollup": "^2.26.0",
-        "rollup-plugin-peer-deps-external": "^2.2.3",
-        "rollup-plugin-postcss": "^3.1.8",
-        "rollup-plugin-terser": "^7.0.2",
-        "rollup-plugin-typescript2": "^0.27.2",
-        "typescript": "^4.0.3",
-        "typescript-plugin-css-modules": "^2.7.0"
+        "rollup": "^4.0.0",
+        "rollup-plugin-postcss": "^4.0.2",
+        "tslib": "^2.6.0",
+        "typescript": "^6.0.0"
     },
     "dependencies": {
-        "page-flip": "github:tukiosinc/StPageFlip#a581b6c12f4eed12eebe8b96fa5e1781ef5b8d5e"
+        "page-flip": "github:tukiosinc/StPageFlip#59dc290b761bd9fec9bb044a9d28ad38d7ba121f"
     },
     "keywords": [
         "react",
