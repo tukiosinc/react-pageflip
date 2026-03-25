@@ -47,7 +47,7 @@
         "typescript-plugin-css-modules": "^2.7.0"
     },
     "dependencies": {
-        "page-flip": "github:tukiosinc/StPageFlip#118e8797a45995268a306eff958902bf283baae9"
+        "page-flip": "github:tukiosinc/StPageFlip#a581b6c12f4eed12eebe8b96fa5e1781ef5b8d5e"
     },
     "keywords": [
         "react",
