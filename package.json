@@ -31,7 +31,7 @@
         "typescript": "^6.0.0"
     },
     "dependencies": {
-        "page-flip": "github:tukiosinc/StPageFlip#59dc290b761bd9fec9bb044a9d28ad38d7ba121f"
+        "page-flip": "github:nxutukios/StPageFlip#bfec56c2faa07b553e5516906cf2409532fe569f"
     },
     "keywords": [
         "react",
