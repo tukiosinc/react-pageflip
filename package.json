@@ -22,6 +22,7 @@
     "devDependencies": {
         "@rollup/plugin-typescript": "^12.0.0",
         "autoprefixer": "^10.0.0",
+        "postcss": "^8.4.0",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "rollup": "^4.0.0",
@@ -30,7 +31,7 @@
         "typescript": "^6.0.0"
     },
     "dependencies": {
-        "page-flip": "github:tukiosinc/StPageFlip#59dc290b761bd9fec9bb044a9d28ad38d7ba121f"
+        "page-flip": "github:nxutukios/StPageFlip#bfec56c2faa07b553e5516906cf2409532fe569f"
     },
     "keywords": [
         "react",
